@@ -29,9 +29,14 @@ jobs:
           yes | sdkmanager --licenses > /dev/null || true
           sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0"
 
-      - name: Create dummy .env (Gemini key not required to build)
+      - name: Ensure .env / .env.example exist (required by secrets plugin)
         run: |
-          echo "# no key set for CI build" > .env
+          if [ ! -f ".env.example" ]; then
+            echo "# GEMINI_API_KEY=MY_GEMINI_API_KEY" > .env.example
+          fi
+          if [ ! -f ".env" ]; then
+            echo "# no key set for CI build" > .env
+          fi
 
       - name: Generate debug keystore
         run: |
