@@ -1,0 +1,6 @@
+{
+  "name": "VOLT",
+  "description": "Background air-gesture controller and scrolling energy tracker for Reels and Shorts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

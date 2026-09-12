@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VOLT</string>
+    <string name="accessibility_service_description">Allows VOLT to detect active video feeds and execute hands-free scrolling gestures in Instagram, YouTube Shorts, and Facebook Reels.</string>
+    <string name="notification_channel_name">VOLT Gesture Control</string>
+    <string name="notification_channel_desc">Active air-gesture detection and energy monitoring service</string>
+    <string name="notification_active_title">VOLT Gesture Control — Active</string>
+    <string name="notification_active_content">Air gestures enabled • %1$d%% Energy</string>
+    <string name="action_stop">STOP</string>
+    <string name="privacy_statement">Camera is used only to detect hand gestures. No camera images or video are recorded or uploaded.</string>
+</resources>
